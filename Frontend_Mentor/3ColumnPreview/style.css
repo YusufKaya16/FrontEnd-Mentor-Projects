@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Big Shoulders Display", sans-serif;
+  flex-direction: column;
 }
 body .container {
   max-width: 650px;
@@ -77,10 +78,12 @@ body .container .luxury .luxury-more-btn a {
 }
 body footer {
   position: absolute;
+  justify-self: flex-end;
   bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 600px) {
+
   body .container {
     grid-template-columns: 100%;
     margin: 120px;
@@ -113,6 +116,9 @@ body footer {
 
   body .container .luxury {
     padding-inline: 45px;
+  }
 
+  body footer{
+    position: relative;
   }
 }
