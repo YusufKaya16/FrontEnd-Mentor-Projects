@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$p-color: hsla(0, 0%, 100%, 0.75);
+
+$font-1: 'Lexend Deca';
+$font-2: 'Big Shoulders Display';
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-2, sans-serif;
+    // flex-direction: column;
+
+    .container {
+        max-width: 650px;
+        display: grid;
+        border-radius: .5rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        .icon {
+            margin-bottom: 30px;
+
+        }
+
+        .title {
+            color: white;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .cardBaseClass {
+            padding: 40px 30px;
+
+            p {
+                color: $p-color;
+                font-size: .7rem;
+                font-weight: 100;
+                line-height: 1.2rem;
+                font-family: $font-1;
+            }
+        }
+
+        .info {
+            margin-bottom: 70px;
+            // border: 2px solid lightgreen;
+        }
+
+        .btnBaseClass {
+
+            a {
+                padding: 10px 25px;
+                text-decoration: none;
+                background: white;
+                text-align: center;
+                border-radius: 40px;
+                font-family: $font-1;
+                font-size: .8rem;
+
+
+                &:hover {
+                    background: transparent;
+                    border: 2px solid white;
+                    color: white;
+                }
+            }
+        }
+
+        .sedan {
+            @extend .cardBaseClass;
+            background: $Bright-orange;
+            border-top-left-radius: inherit;
+            border-bottom-left-radius: inherit;
+
+            .sedan-more-btn {
+                @extend .btnBaseClass;
+
+                a {
+                    color: $Bright-orange;
+                }
+            }
+
+        }
+
+        .suv {
+            @extend .cardBaseClass;
+            background: $Dark-cyan;
+
+            .suv-more-btn {
+                @extend .btnBaseClass;
+
+                a {
+                    color: $Dark-cyan;
+                }
+            }
+        }
+
+        .luxury {
+            @extend .cardBaseClass;
+            background: $Very-dark-cyan;
+            border-top-right-radius: inherit;
+            border-bottom-right-radius: inherit;
+
+            .luxury-more-btn {
+                @extend .btnBaseClass;
+
+                a {
+                    color: $Very-dark-cyan;
+                }
+            }
+        }
+    }
+
+    footer {
+        position: absolute;
+        align-self: flex-end;
+    }
+}

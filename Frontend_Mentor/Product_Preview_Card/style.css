@@ -17,7 +17,7 @@ body .container > * {
 }
 body .container {
   display: flex;
-  max-width: 650px;
+  width: 650px;
   border-radius: 1rem;
   background: #fff;
   flex-direction: row;
@@ -92,20 +92,7 @@ body .container .information .btn {
 body .container .information .btn:hover {
   background: hsl(212, 21%, 14%);
 }
-
 body footer {
   position: absolute;
   align-self: flex-end;
 }/*# sourceMappingURL=style.css.map */
-
-@media screen and (max-width: 600px) {
-  body .container {
-    flex-direction: column;
-    margin: 50px;
-  }
-
-  body .container .image{
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: 0;
-  }
-}
