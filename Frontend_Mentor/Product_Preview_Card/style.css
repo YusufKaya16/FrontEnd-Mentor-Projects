@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(30, 38%, 92%);
+}
+body .container > * {
+  flex-basis: 50%;
+}
+body .container {
+  display: flex;
+  max-width: 650px;
+  border-radius: 1rem;
+  background: #fff;
+  flex-direction: row;
+}
+body .container .image {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  overflow: hidden;
+}
+body .container .image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+body .container .information {
+  padding: 30px;
+}
+body .container .information .top-content h3 {
+  font-family: "Montserrat", sans serif;
+  letter-spacing: 4px;
+  font-weight: normal;
+  opacity: 0.6;
+  font-size: 1em;
+}
+body .container .information .top-content h1 {
+  font-family: "Fraunces", sans serif;
+  margin-block: 20px;
+  padding-inline-end: 3.125rem;
+  line-height: 1em;
+}
+body .container .information .top-content p {
+  font-family: "Montserrat", sans serif;
+  opacity: 0.6;
+  line-height: 1.5em;
+  margin-block-end: 20px;
+}
+body .container .information .cost {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+body .container .information .cost span {
+  font-family: "Fraunces", sans serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+body .container .information .cost del {
+  font-family: "Montserrat", sans serif;
+  font-weight: normal;
+  font-size: 14px;
+  opacity: 0.5;
+}
+body .container .information .btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0.5rem;
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-family: "Montserrat", sans serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+body .container .information .btn:hover {
+  background: hsl(212, 21%, 14%);
+}
+
+body footer {
+  position: absolute;
+  align-self: flex-end;
+}/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 600px) {
+  body .container {
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  body .container .image{
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: 0;
+  }
+}

@@ -1,0 +1,6 @@
+***	Important Notes for Responsive Design	***
+
+Note-1: responsive tasarım yapılacaksa örneğin bir container genişlik özellikliğini width yerine max-width olarak kullan. Bunun amacı içerisine ne eklenirse eklensin veya body' nin genişliği ne olursa olsun container'ın genişliği en fazla max-width ne ayarlanırsa o kadar olacaktır. Sadece width esnek bir yapıya sahip olacaktır ve sürekli genişlemeye açık olacaktır.
+
+Note-2: flex-basis property'si, bu özellik conteiner içerisinde herhangi bir ögeye verilen ve ilk boyutunu tanımlayan bir özelliktir. container içerisinde ne kadar yer kaplaması gerektiğine karar verir. Örneğin bu projede container ikiye bölünmüş ve sol tarafta image sağ tarafta information var. İkisinin kapladığı yer eşit olduğu için container içindeki tüm öğelere flex-basis: 50% değeri verdim.
+
