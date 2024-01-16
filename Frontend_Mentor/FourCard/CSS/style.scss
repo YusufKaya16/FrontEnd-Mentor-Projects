@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+    .container {
+        width: min(70rem, 90%);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .header {
+            display: flex;
+            justify-content: center;
+
+            .title-container {
+                max-width: min(450px, 80%);
+                text-align: center;
+
+                .title {
+                    &:nth-of-type(1) {
+                        font-weight: 100;
+                        color: $Very-Dark-Blue;
+                        text-wrap: nowrap;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: $Very-Dark-Blue;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                        text-wrap: nowrap;
+                    }
+                }
+
+                p {
+                    color: $Grayish-Blue;
+                    line-height: 1.5em;
+                }
+            }
+        }
+
+        .middle-container {
+            display: flex;
+            gap: 30px;
+
+            .cardBaseClass {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+            }
+
+            .first-card-container {
+                @extend .cardBaseClass;
+
+                .card {
+                    border-top: 5px solid $Cyan;
+                }
+
+            }
+
+            .two-card-container {
+                @extend .cardBaseClass;
+                flex-direction: column;
+                gap: 30px;
+
+                .card {
+                    &:first-child {
+                        border-top: 5px solid $Red;
+                    }
+
+                    &:last-child {
+                        border-top: 5px solid $Orange;
+                    }
+                }
+            }
+
+            .three-card-container {
+                @extend .cardBaseClass;
+
+                .card {
+                    border-top: 5px solid $Blue;
+                }
+
+            }
+
+            .card {
+                max-width: 350px;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                box-shadow: 0px 4px 5px gray;
+                border-radius: 5px;
+
+                .card-header {
+                    h3 {
+                        font-weight: 600;
+                        font-size: 1.5em;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        color: $Grayish-Blue;
+                        line-height: 1.5em;
+                    }
+                }
+
+                .icon {
+                    svg {
+                        float: right;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 765px) {
+
+        .middle-container {
+            flex-direction: column;
+        }
+
+    }
+}

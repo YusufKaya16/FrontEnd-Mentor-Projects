@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+body .container {
+  width: min(70rem, 90%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+body .container .header {
+  display: flex;
+  justify-content: center;
+}
+body .container .header .title-container {
+  max-width: min(450px, 80%);
+  text-align: center;
+}
+body .container .header .title-container .title:nth-of-type(1) {
+  font-weight: 100;
+  color: hsl(234, 12%, 34%);
+  text-wrap: nowrap;
+}
+body .container .header .title-container .title:nth-of-type(2) {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-wrap: nowrap;
+}
+body .container .header .title-container p {
+  color: hsl(229, 6%, 66%);
+  line-height: 1.5em;
+}
+body .container .middle-container {
+  display: flex;
+  gap: 30px;
+}
+body .container .middle-container .cardBaseClass, body .container .middle-container .three-card-container, body .container .middle-container .two-card-container, body .container .middle-container .first-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+body .container .middle-container .first-card-container .card {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+body .container .middle-container .two-card-container {
+  flex-direction: column;
+  gap: 30px;
+}
+body .container .middle-container .two-card-container .card:first-child {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+body .container .middle-container .two-card-container .card:last-child {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+body .container .middle-container .three-card-container .card {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+body .container .middle-container .card {
+  max-width: 350px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0px 4px 5px gray;
+  border-radius: 5px;
+}
+body .container .middle-container .card .card-header h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+body .container .middle-container .card .card-header p {
+  color: hsl(229, 6%, 66%);
+  line-height: 1.5em;
+}
+body .container .middle-container .card .icon svg {
+  float: right;
+}
+@media screen and (max-width: 765px) {
+  body .middle-container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
