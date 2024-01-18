@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(234, 29%, 20%);
+}
+body .main-container {
+  max-width: min(60rem, 90%);
+  background: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 20px 20px;
+}
+body .main-container .container {
+  flex-basis: 50%;
+  border-radius: calc(2rem - 20px);
+}
+body .main-container .container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .main-container .container h1 {
+  color: hsl(235, 18%, 26%);
+}
+body .main-container .container p {
+  color: hsl(235, 18%, 26%);
+  font-weight: 500;
+}
+body .main-container .container .list-group .list-group-item {
+  color: hsl(235, 18%, 26%);
+  font-weight: 500;
+}
+body .main-container .container .list-group .list-group-item svg {
+  margin-inline-end: 10px;
+}
+body .main-container .container label {
+  font-size: 0.8rem;
+  margin-block: 5px;
+}
+body .main-container .container form .btn {
+  border-radius: 0.5rem;
+  height: 55px !important;
+  border: none;
+}
+body .main-container .container form .btn:hover {
+  background: hsl(4, 100%, 67%);
+}
+body .main-container .container #emailInput:focus {
+  border-color: black;
+}
+body .main-container .container .invalidStyle {
+  background: rgba(255, 98, 87, 0.2);
+  border-color: hsl(4, 100%, 67%) !important;
+  color: hsl(4, 100%, 67%);
+}
+@media screen and (max-width: 990px) {
+  body .main-container {
+    border-radius: 0;
+    padding: 0px 0px 20px 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
