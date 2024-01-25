@@ -11,10 +11,9 @@ body {
     place-content: center;
     background: hsl(275, 100%, 97%);
     font-family: 'Work Sans';
-
+    background-image: url("img/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
 }
-
-
 
 .container {
     width: 550px;
@@ -42,26 +41,23 @@ body {
     cursor: pointer;
 }
 
+.ask{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .question p {
     font-weight: 600;
-    display: inline;
 }
 
 .ask:hover p {
     color: #AD28EB;
 }
 
-.ask svg {
-    float: right;
-}
-
-.info {
-    margin-block: 20px;
-}
-
-.info p {
+.info .parag {
     font-weight: normal;
-    opacity: .7;
+    height: 0;
+    opacity: 0;
+    transition: height 100ms linear;
 }
-

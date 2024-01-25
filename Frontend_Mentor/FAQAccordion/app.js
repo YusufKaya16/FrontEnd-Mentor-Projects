@@ -1,24 +1,20 @@
-const text = document.querySelector('.question');
-const info = document.querySelectorAll('.info p');
-const icon = document.querySelector('.question').querySelector('svg');
+const content = document.querySelector('.content');
+const infoDivs = document.querySelectorAll('info');
 
 
+content.addEventListener('click', (event) => {
 
-Array.from(info).forEach((element)=>{
-    element.style.display = 'none';
-})
+    if (!event.target.closest('img')) return;
+    const information = event.target.parentElement.nextSibling.nextSibling;
+    const parag = information.getElementsByTagName('p')[0];
 
-text.addEventListener('click', ()=>{
-    if(info[0].style.display === 'none'){
-        info[0].style.display = 'block';
+    if(parag.clientHeight){
+        parag.style.height = 0;
+        parag.style.opacity = 0;
     }
     else{
-        info[0].style.display = 'none';
+        parag.style.height = parag.scrollHeight + 'px';
+        parag.style.opacity = '0.7';
     }
-})
 
-
-
-
-
-
+});
