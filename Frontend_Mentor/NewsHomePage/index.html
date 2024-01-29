@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Home Page</title>
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="images/icon-menu.svg" alt="menu-icon" data-type="open">
+                </button>
+                <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="border-0 bg-transparent mb-5 ms-auto" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                            <img src="images/icon-menu-close.svg" alt="close-icon" data-type="close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#new">New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#popular">Popular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#trending">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#categories">Categories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid mt-4">
+            <div class="container d-flex flex-column gap-5">
+
+                <div class="row gap-lg-0 gap-5">
+                    <div class="col-lg-8 d-flex flex-column justify-content-between">
+
+                        <picture>
+                            <source media="(min-width: 990px)" srcset="images/image-web-3-desktop.jpg">
+                            <img src="images/image-web-3-mobile.jpg" style="width: 100%;" alt="desktop">
+                        </picture>
+
+                        <div class="row pt-4 gap-5">
+                            <div class="col-lg-5 pe-5">
+                                <h1 class="fw-bolder">The Bright Future of Web 3.0?
+                                </h1>
+                            </div>
+                            <div class="col-lg-5">
+                                <p class="text">
+                                    We dive into the next evolution of the web that claims to put the power of the
+                                    platforms back into the hands of the people. But is it really fulfilling its
+                                    promise?
+                                </p>
+                                <button class="btn btn-dark rounded-0 border-0" id="btn-read-more">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 bg-dark p-4 d-flex flex-column gap-3">
+                        <h1 class="fw-bold" style="color: hsl(35, 77%, 62%)">New</h1>
+
+                        <div class="container py-3 new-div">
+                            <h3 class="text-light text-nowrap new-title">Hydrogen VS Electric Cars</h3>
+                            <p class="text-light opacity-75">Will hydrogen-flued cars ever catch up to EVs?</p>
+                        </div>
+                        <div class="container py-3 new-div">
+                            <h3 class="text-light text-nowrap new-title">The Downsides of AI Artistry</h3>
+                            <p class="text-light opacity-75">What are the possible adverse effects of on-demand AI
+                                image
+                                generation?</p>
+                        </div>
+                        <div class="container py-3 new-div">
+                            <h3 class="text-light text-nowrap new-title">Is VS Funding Drying Up?</h3>
+                            <p class="text-light opacity-75">Private funding by VC firms is down 50% YOY. We take a
+                                look
+                                at what that means.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gap-lg-0 gap-2">
+                    <div class="col-lg-4 d-flex gap-2">
+                        <div class="image-container">
+                            <img src="images/image-retro-pcs.jpg" style="width: 100px;" alt="retro">
+                        </div>
+                        <div class="container">
+                            <h2 class="number-title">01</h2>
+                            <div class="content">
+                                <a href="index.html" class="content-title">Reviving Retro PCs</a>
+                                <p class="content-text">
+                                    What happens whrn old PCs are given modern upgrades?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex gap-2">
+                        <div class="image-container">
+                            <img src="images/image-top-laptops.jpg" style="width: 100px;" alt="retro">
+                        </div>
+                        <div class="container">
+                            <h2 class="number-title">02</h2>
+                            <div class="content">
+                                <a href="index.html" class="content-title">Top 10 Laptops of 2022</a>
+                                <p class="content-text">
+                                    Our best picks for various needs and budgets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex gap-2">
+                        <div class="image-container">
+                            <img src="images/image-gaming-growth.jpg" style="width: 100px;" alt="retro">
+                        </div>
+                        <div class="container">
+                            <h2 class="number-title">03</h2>
+                            <div class="content">
+                                <a href="index.html" class="content-title">The Growth of Gaming</a>
+                                <p class="content-text">
+                                    How the pandemic has sparked fresh opportunities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

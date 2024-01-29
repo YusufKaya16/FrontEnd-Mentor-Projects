@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+
+
+
+body {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+
+    .nav-link {
+        &:hover {
+            color: $Soft-orange;
+        }
+    }
+
+    #btn-read-more {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 60%;
+        height: 50px;
+        background: $Soft-red;
+
+        &:hover {
+            background: $Very-dark-blue;
+        }
+    }
+
+    .new-div {
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($Off-white, $alpha: 0.5);
+        }
+
+        .new-title {
+            cursor: pointer;
+
+            &:hover {
+                color: $Soft-orange !important;
+            }
+        }
+    }
+
+    .number-title {
+        color: $Dark-grayish-blue;
+        opacity: .5;
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+
+    .content-title {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: bolder;
+
+        &:hover {
+            color: $Soft-orange !important;
+        }
+    }
+
+    .content-text {
+        color: $Dark-grayish-blue;
+    }
+
+    .canvaLinks {
+        .nav-link {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+
+    .activeLink {
+        color: $Soft-orange !important;
+    }
+
+}
