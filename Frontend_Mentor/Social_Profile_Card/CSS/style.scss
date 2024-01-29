@@ -16,28 +16,39 @@ body {
     justify-content: center;
     align-items: center;
 
-    main{
-        .container{
+    main {
+        .container {
             background: $Dark-Grey;
             border-radius: .5rem !important;
         }
-        .country{
+
+        .country {
             color: $Green;
         }
 
-        .info{
+        .info {
             color: $White;
             opacity: .7;
         }
 
-        .list-group-item{
-            background: $Grey;
-            color: $White;
+        .list-group-item {
             text-align: center;
+            padding: 0;
+            background: $Grey;
             border-radius: .5rem !important;
-            font-weight: bold;
+        }
 
-            &:hover{
+        .link {
+            display: block;
+            text-decoration: none;
+            color: $White;
+            font-weight: bold;
+            background: $Grey;
+            padding-block: 10px;
+            border-radius: .5rem;
+            width: 100%;
+
+            &:hover {
                 color: $Off-Black;
                 background: $Green;
             }
