@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$Dark-Grey: hsl(0, 0%, 12%);
+$Off-Black: hsl(0, 0%, 8%);
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background: $Off-Black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main{
+        .container{
+            background: $Dark-Grey;
+            border-radius: .5rem !important;
+        }
+        .country{
+            color: $Green;
+        }
+
+        .info{
+            color: $White;
+            opacity: .7;
+        }
+
+        .list-group-item{
+            background: $Grey;
+            color: $White;
+            text-align: center;
+            border-radius: .5rem !important;
+            font-weight: bold;
+
+            &:hover{
+                color: $Off-Black;
+                background: $Green;
+            }
+        }
+    }
+}
