@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  font-family: "Space Mono", monospace;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(185, 41%, 84%);
+}
+body .container {
+  width: min(800px, 90%);
+  background: hsl(0, 0%, 100%);
+  padding: 20px 30px;
+  border-radius: 1.5rem;
+}
+body .container .top-input-area .img-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .container .top-input-area .img-input .input {
+  text-align: end;
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-size: 1.5rem;
+}
+body .container .top-input-area .img-input .input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+body .container .top-input-area .img-input .icon {
+  position: absolute;
+  left: 10px;
+}
+body .container .select-tip-group .tip-group-item {
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 0.5rem;
+  height: 40px;
+  font-size: 1.2rem;
+}
+body .container .select-tip-group .tip-group-item:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+body .container .select-tip-group .buttonClicked {
+  background-color: hsl(172, 67%, 45%);
+}
+body .container .select-tip-group #custom-con {
+  font-size: 1.5rem;
+  position: relative;
+}
+body .container .select-tip-group #custom-con #custom {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+body .container .select-tip-group #custom-con #custom::-webkit-outer-spin-button, body .container .select-tip-group #custom-con #custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body .container .select-tip-group #custom-con #custom:focus {
+  outline-color: hsl(172, 67%, 45%);
+}
+body .container .select-tip-group #custom-con label {
+  position: absolute;
+  pointer-events: none;
+  opacity: 50%;
+}
+body .container .select-tip-group #custom-con #custom:focus ~ label {
+  display: none;
+}
+body .container .people-input-area .img-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .container .people-input-area .img-input .input {
+  text-align: end;
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-size: 1.5rem;
+}
+body .container .people-input-area .img-input .input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+body .container .people-input-area .img-input .icon {
+  position: absolute;
+  left: 10px;
+}
+body .container .people-input-area .peopleChanged {
+  outline-color: red !important;
+}
+body .container #right-section {
+  background: hsl(183, 100%, 15%);
+  border-radius: 1rem;
+}
+body .container #right-section .price {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+}
+body .container #right-section .btn {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: hsl(183, 100%, 15%);
+}
+body .container #right-section .btn:hover {
+  background-color: hsl(189, 41%, 97%);
+}
+body .container #right-section .resetChanged {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.opac-50 {
+  opacity: 50%;
+}/*# sourceMappingURL=style.css.map */
