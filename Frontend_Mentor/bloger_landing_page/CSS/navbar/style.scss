@@ -1,0 +1,83 @@
+@import "/CSS/style.css";
+
+.navbar {
+
+    .nav-link {
+        color: var(--White-text);
+
+        &:focus:not(:last-child, :nth-last-child(2)) {
+            text-decoration: underline;
+        }
+
+        &:focus+.arrow-img {
+            transform: rotate(-180deg);
+        }
+    }
+
+    .arrow-img {
+        transition: transform 100ms linear;
+    }
+
+    .dropdown-item {
+        &:hover {
+            background: none;
+            font-weight: bold;
+        }
+    }
+
+    .signUpBtn {
+        background: var(--White-text);
+        color: var(--Light-red);
+        border-radius: 25px;
+        padding: 10px 25px;
+
+        &:hover {
+            background: rgba($color: #fff, $alpha: 0.2);
+            color: var(--White-text);
+        }
+    }
+
+    .changeClass {
+        background: var(--White-text);
+        border-radius: .5rem;
+
+        .dropdown-menu{
+            background: rgba($color: #000000, $alpha: 0.1);
+            text-align: center;
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .nav-link {
+                color: #000;
+                font-weight: bolder;
+
+                &:focus{
+                    opacity: 75%;
+                }
+            }
+        }
+
+        .navbar-btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .loginBtn {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .signUpBtn {
+            color: var(--White-text);
+            font-weight: bold;
+            background: var(--Light-red);
+        }
+    }
+
+
+}
