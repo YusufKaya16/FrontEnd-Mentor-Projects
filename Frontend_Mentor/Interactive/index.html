@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Component</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <main class="container" data-buttonValue="">
+        <section class="component-card" id="vote-card">
+            <header class="card-header">
+                <img class="img" src="images/icon-star.svg" alt="star-icon">
+            </header>
+            <article class="information">
+                <h1 class="card-title">How did we do?</h1>
+                <p class="card-text">
+                    Please let us know how we did with your support request. All feedback is appreciated to help us
+                    improve
+                    our offering!
+                </p>
+            </article>
+            <div class="button-group">
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+            </div>
+            <button class="submit-btn">SUBMIT</button>
+        </section>
+
+        <section class="component-card align-items-center d-none" id="answer-card">
+            <header class="card-header">
+                <img class="img-result" src="images/illustration-thank-you.svg" alt="result-icon">
+            </header>
+            <span class="change-text"></span>
+            <article class="information align-items-center">
+                <h2 class="card-title">Thank you!</h2>
+                <p class="card-text text-center">
+                    We appreciate you taking the time to give a rating. If you ever need more support, don't hesilate to
+                    get in touch!
+                </p>
+            </article>
+        </section>
+
+
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
