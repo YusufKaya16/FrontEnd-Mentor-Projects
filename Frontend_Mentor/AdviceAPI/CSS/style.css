@@ -51,10 +51,10 @@ body .card .dice {
   padding: 20px;
   border-radius: 50%;
   background: hsl(150, 100%, 66%);
-  transform: translate(0px, 320%);
   border: none;
   cursor: pointer;
   position: absolute;
+  bottom: -15%;
 }
 body .card .dice .dice-img {
   pointer-events: none;

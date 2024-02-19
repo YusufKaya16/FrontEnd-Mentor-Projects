@@ -21,12 +21,13 @@ function changeAdvice(event) {
             title.textContent = id;
             adviceText.textContent = advice;
         })
+
 }
 
 gsap.from(".title", {
     opacity: 0,
     x: -200,
-    duration: .5
+    duration:  1
 });
 
 gsap.from(".advice-text", {

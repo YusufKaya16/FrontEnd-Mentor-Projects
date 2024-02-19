@@ -33,7 +33,6 @@ body{
         align-items: center;
         position: relative;
 
-
         .card-inner *{
             text-align: center;
         }
@@ -64,10 +63,10 @@ body{
             padding: 20px;
             border-radius: 50%;
             background: $Neon-Green;
-            transform: translate(0px, 320%);
             border: none;
             cursor: pointer;
             position: absolute;
+            bottom: -15%;
 
             .dice-img{
                 pointer-events: none;
