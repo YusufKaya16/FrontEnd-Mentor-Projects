@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice API</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <main class="card">
+
+        <article class="card-inner">
+            <header class="card-title">
+                <h1 class="title">ADVICE #<span id="advice-id"></span></h1>
+            </header>
+            <p class="advice-text"></p>
+        </article>
+
+        <picture>
+            <source media="(min-width: 600px)" srcset="images/pattern-divider-desktop.svg">
+            <img class="divide-img" src="images/pattern-divider-mobile.svg" alt="icon-divider">
+        </picture>
+
+        <button class="dice">
+            <svg class="dice-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+                    fill="#202733" />
+            </svg>
+        </button>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <script src="advice.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
