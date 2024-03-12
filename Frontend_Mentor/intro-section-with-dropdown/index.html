@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Section With Dropdown</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a class="navbar-brand" href="#logo">
+                    <img class="brand-image" src="images/logo.svg" alt="logo">
+                </a>
+
+                <div class="collapse-buttons">
+                    <button class="toggle-btn" id="open">
+                        <img src="images/icon-menu.svg" alt="hamburger">
+                    </button>
+                </div>
+
+                <div class="shadow">
+                    <div class="collapse">
+                        <div class="close-button-div">
+                            <button class="close-button" id="close">
+                                <img src="images/icon-close-menu.svg" alt="hamburger">
+                            </button>
+                        </div>
+                        <ul class="nav-link-list">
+                            <li class="nav-list-item">
+                                <button class="dropdown-button">Features
+                                    <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="">
+                                </button>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#todo">
+                                            <img class="dropdown-icon" src="images/icon-todo.svg" alt="todo">
+                                            Todo
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#calendar">
+                                            <img class="dropdown-icon" src="images/icon-calendar.svg" alt="calendar">
+                                            Calendar
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#reminder">
+                                            <img class="dropdown-icon" src="images/icon-reminders.svg" alt="reminder">
+                                            Reminder
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#planning" class="dropdown-link">
+                                            <img class="dropdown-icon" src="images/icon-planning.svg" alt="planning">
+                                            Planning
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-list-item">
+                                <button class="dropdown-button">Company
+                                    <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="">
+                                </button>
+                                <ul class="dropdown" id="second-drop">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#history">
+                                            History
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#ourteam" class="dropdown-link">Our team
+
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#blog" class="dropdown-link">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="#careers">Careers</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                        </ul>
+
+                        <div class="button-group">
+                            <a class="login-btn" href="#login">Login</a>
+                            <a class="register-btn" href="#register">register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="top-content">
+                        <h1 class="title">Make remote work</h1>
+                        <p class="intro">Get your team in sync, no matter your location. Streamline processes, create
+                            team rituals, and watch productivity soar.</p>
+                        <a class="learn-more-btn" href="#learn-more">Learn more</a>
+                    </div>
+                    <div class="bottom-content">
+                        <img src="images/client-databiz.svg" alt="databiz">
+                        <img src="images/client-audiophile.svg" alt="databiz">
+                        <img src="images/client-meet.svg" alt="databiz">
+                        <img src="images/client-maker.svg" alt="databiz">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <picture class="image-div">
+                        <source media="(min-width: 700px)" srcset="images/image-hero-desktop.png">
+                        <img class="hero-image" src="images/image-hero-mobile.png" alt="hero">
+                    </picture>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+
+    <script src="src/index.js"></script>
+
+</body>
+
+</html>

@@ -25,5 +25,4 @@ function controlInput(event) {
 
 function subscribe(event) {
     sessionStorage.setItem('email1', emailInput.value);
-
 }
