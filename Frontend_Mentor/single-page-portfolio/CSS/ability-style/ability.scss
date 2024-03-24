@@ -1,0 +1,41 @@
+@use "../global-style/style.css";
+@use "../variables-style/variables.css";
+
+
+.ability {
+    position: relative;
+
+    .ability-tag {
+        @extend .l-text;
+        color: var(--color-white);
+        transition: all 200ms linear;
+    }
+
+    .exp-date {
+        @extend .body-text;
+        color: var(--color-light-gray);
+    }
+
+    .rings {
+        position: absolute;
+        width: 530px;
+        height: 129px;
+        margin: 200px 1149px;
+        z-index: -1;
+    }
+}
+
+@media screen  and (max-width: 768px){
+    .ability{
+        .ability-tag{
+            font-size: 32px !important;
+            line-height: 56px !important;
+            letter-spacing: -1px !important;
+        }
+        .exp-date{
+            color: var(--color-light-gray);
+            font-size: 16px !important;
+            line-height: 26px !important;
+        }
+    }
+}

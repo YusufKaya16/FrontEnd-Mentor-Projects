@@ -1,0 +1,76 @@
+@use "../global-style/style.css";
+@use "../variables-style/variables.css";
+
+
+.projects {
+
+    .title {
+        color: var(--color-white);
+        @extend .xl-text;
+        transition: all 150ms ease;
+    }
+
+    .picture-area{
+        position: relative;
+        &:hover{
+            .pic-link{
+                display: flex !important; 
+            }
+        }
+        .pic-link{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            margin: auto;
+            background: rgba($color: #000000, $alpha: .5);
+            display: none !important;
+            cursor: pointer;
+        }
+    }
+
+    .pro-card {
+        width: 540px;
+        gap: 1.25rem;
+        overflow: hidden;
+
+        .pro-text {
+            .pro-title {
+                color: var(--color-white);
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 2rem;
+            }
+
+            .tag-item {
+                color: var(--color-light-gray);
+                @extend .body-text;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .pro-image {
+        width: 343px !important;
+        height: auto !important;
+    }
+
+    .picture-area{
+        &:hover{
+            .pic-link{
+                display: none !important;
+            }
+        }
+    }
+
+    .projects {
+        .title {
+            font-size: 2.5rem !important;
+            letter-spacing: -1.14px !important;
+            line-height: 2.5rem !important;
+        }
+    }
+
+}

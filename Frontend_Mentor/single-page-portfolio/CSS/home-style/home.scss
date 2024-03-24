@@ -1,0 +1,140 @@
+@use "../global-style/style.css";
+@use "../variables-style/variables.css";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+
+    #navbar-content {
+        width: 80%;
+        height: 100%;
+
+        .name {
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2rem;
+            letter-spacing: -0.44px;
+        }
+
+    }
+}
+
+.icons {
+    .social-link {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .icon {
+        width: 24px;
+        aspect-ratio: 1;
+    }
+}
+
+.contact-link {
+    display: inline-block;
+    width: 125px;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: var(--color-green);
+    text-decoration-thickness: 2px;
+    margin-top: 30px;
+    transition: color 150ms ease;
+
+    &:hover {
+        color: var(--color-green);
+    }
+}
+
+.home {
+    min-height: 100vh;
+    position: relative;
+    background-image: url("/images/image-profile-desktop.webp");
+    background-size: 445px 720px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+    .rings {
+        position: absolute;
+        width: 530px;
+        height: 129px;
+        top: 133px;
+        left: -200px;
+        z-index: -1;
+    }
+
+    .circle {
+        width: 129px;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 521px;
+        left: 766px;
+    }
+
+    .information {
+
+        .title {
+            @extend .xl-text;
+            color:var(--color-white);
+        }
+
+        .name-info {
+            .iam {
+                @extend .xl-text;
+                color: var(--color-white);
+            }
+            .name {
+                @extend .xl-text;
+                color: var(--color-white);
+                text-decoration: underline;
+                text-underline-offset: 1.125rem;
+                text-decoration-color: var(--color-green);
+                text-decoration-thickness: 0.375rem;
+            }
+        }
+
+        .personal {
+            max-width: 445px;
+            color: var(--color-light-gray);
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 500;
+            // margin-top: 50px;
+        }
+    }
+}
+
+@media screen  and (max-width: 768px){
+    #navbar-content {
+        justify-content: center;
+    }
+
+    .home {
+        background-image: none !important;
+    }
+
+    .profile-photo {
+        display: block !important;
+    }
+
+    .information {
+
+        .xl-text{
+            color: var(--color-white);
+            font-size: 2.5rem !important;
+            line-height: 2.5rem !important;
+            letter-spacing: -1.14px !important;
+            text-align: center;
+        }
+    }
+}

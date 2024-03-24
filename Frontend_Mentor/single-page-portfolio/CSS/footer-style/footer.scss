@@ -1,0 +1,102 @@
+@use "../global-style/style.css";
+@use "../variables-style/variables.css";
+
+
+.label-input-base{
+    font-size: 1rem;
+    font-weight: medium;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+}
+
+.footer{
+    min-height: 675px;
+    position: relative;
+    background: var(--color-gray);
+    .contact-info{
+        width: min(445px,  100%);
+        .title{
+            color: var(--color-white);
+            @extend .xl-text;
+        }
+        .explain{
+            height: max-content;
+            color: var(--color-light-gray);
+            @extend .body-text;
+        }
+    }
+
+    .form{
+        width: 445px;
+        
+        .input{
+            width: 445px;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            color: var(--color-white);
+            @extend .label-input-base;
+            
+            &:focus,
+            &:valid{
+                outline: none;
+                border-color: var(--color-green);
+            }
+
+            &:valid ~ .label,
+            &:focus ~ .label{
+                opacity: 1;
+                transform: translateY(-25px) translateX(20px);
+                font-size: .8rem;
+            }
+
+        }
+        .label{
+            color: var(--color-white);
+            @extend .label-input-base;
+            opacity: .5;
+            position: absolute;
+            padding: 10px;
+            left: 0px;
+            transform: translate(0);
+            pointer-events: none;
+            transition: all 150ms linear;
+        }
+        .name-input{
+            position: relative;
+            .input{
+                height: 43px;
+            }
+        }
+        .email-input{
+            position: relative;
+            .input{
+                height: 43px;
+            }
+            .error-message{
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+            }
+        }
+        .message-input{
+            position: relative;
+        }
+    }
+
+    .logo{
+        color: var(--color-white);
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2rem;
+        letter-spacing: -0.44px;
+    }
+
+    .rings{
+        position: absolute;
+        top: 225px;
+        left: -205px;
+
+    }
+}

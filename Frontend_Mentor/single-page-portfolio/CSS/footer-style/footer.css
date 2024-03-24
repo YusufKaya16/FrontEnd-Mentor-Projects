@@ -1,0 +1,174 @@
+:root {
+  --color-black: #151515;
+  --color-green: #4ee1a0;
+  --color-gray: #242424;
+  --color-light-gray: #d9d9d9;
+  --color-white: #ffffff;
+}
+
+.xl-text, .footer .contact-info .title {
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 5.5rem;
+  letter-spacing: -2.5px;
+}
+
+.l-text {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  letter-spacing: -1.5px;
+}
+
+.body-text, .footer .contact-info .explain {
+  font-size: 1.125rem;
+  font-weight: medium;
+  line-height: 1.75rem;
+}
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+body {
+  font-family: SpaceGrotesk;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-black);
+  overflow-x: hidden;
+}
+
+body .container {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  body .footer .contact-info .title {
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+    letter-spacing: -1.14px !important;
+  }
+  body .footer .contact-info .explain {
+    font-size: 1rem !important;
+    line-height: 26px !important;
+    letter-spacing: 0px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .home {
+    background-image: url("../images/image-profile-tablet.webp");
+  }
+} 
+:root {
+  --color-black: #151515;
+  --color-green: #4ee1a0;
+  --color-gray: #242424;
+  --color-light-gray: #d9d9d9;
+  --color-white: #ffffff;
+}
+
+.xl-text, .footer .contact-info .title {
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 5.5rem;
+  letter-spacing: -2.5px;
+}
+
+.l-text {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  letter-spacing: -1.5px;
+}
+
+.body-text, .footer .contact-info .explain {
+  font-size: 1.125rem;
+  font-weight: medium;
+  line-height: 1.75rem;
+}
+
+.label-input-base, .footer .form .label, .footer .form .input {
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 26px;
+  letter-spacing: -0.22px;
+}
+
+.footer {
+  min-height: 675px;
+  position: relative;
+  background: var(--color-gray);
+}
+.footer .contact-info {
+  width: min(445px, 100%);
+}
+.footer .contact-info .title {
+  color: var(--color-white);
+}
+.footer .contact-info .explain {
+  height: -moz-max-content;
+  height: max-content;
+  color: var(--color-light-gray);
+}
+.footer .form {
+  width: 445px;
+}
+.footer .form .input {
+  width: 445px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: var(--color-white);
+}
+.footer .form .input:focus, .footer .form .input:valid {
+  outline: none;
+  border-color: var(--color-green);
+}
+.footer .form .input:valid ~ .label, .footer .form .input:focus ~ .label {
+  opacity: 1;
+  transform: translateY(-25px) translateX(20px);
+  font-size: 0.8rem;
+}
+.footer .form .label {
+  color: var(--color-white);
+  opacity: 0.5;
+  position: absolute;
+  padding: 10px;
+  left: 0px;
+  transform: translate(0);
+  pointer-events: none;
+  transition: all 150ms linear;
+}
+.footer .form .name-input {
+  position: relative;
+}
+.footer .form .name-input .input {
+  height: 43px;
+}
+.footer .form .email-input {
+  position: relative;
+}
+.footer .form .email-input .input {
+  height: 43px;
+}
+.footer .form .email-input .error-message {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+.footer .form .message-input {
+  position: relative;
+}
+.footer .logo {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: -0.44px;
+}
+.footer .rings {
+  position: absolute;
+  top: 225px;
+  left: -205px;
+}/*# sourceMappingURL=footer.css.map */

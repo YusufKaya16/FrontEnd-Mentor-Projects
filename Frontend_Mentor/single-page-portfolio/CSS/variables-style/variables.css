@@ -1,0 +1,27 @@
+:root{
+    --color-black: #151515;
+    --color-green: #4ee1a0;
+    --color-gray : #242424;
+    --color-light-gray: #d9d9d9;
+    --color-white: #ffffff;
+}
+
+.xl-text{
+    font-size: 5.5rem;
+    font-weight: bold;
+    line-height: 5.5rem;
+    letter-spacing: -2.5px;
+}
+
+.l-text{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    letter-spacing: -1.5px;
+}
+
+.body-text{
+    font-size: 1.125rem;
+    font-weight: medium;
+    line-height: 1.75rem;
+}
