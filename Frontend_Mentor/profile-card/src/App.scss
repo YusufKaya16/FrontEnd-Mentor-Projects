@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+$name-color: #2e3349;
+$age-color: #6b7082;
+$border-color: #979797;
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("./assets/bg-pattern-top.svg"), url("./assets/bg-pattern-bottom.svg");
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.add-border {
+  border: 2px solid red;
+}
+
+.profil-card {
+  width: 350px;
+  height: 374px;
+  border-radius: 15px;
+  background-image: url("./assets/bg-pattern-card.svg"),
+    linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  background-position: top;
+  box-shadow: 0px 30px 50px rgba($color: #000000, $alpha: 0.5);
+
+  .profil-image-wrap {
+    width: fit-content;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    margin: 92px auto 0;
+
+    .profil-image {
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+
+  .information {
+    text-align: center;
+    margin-block: 1.5rem;
+    .name {
+      font-weight: bold;
+      font-size: 1.125rem;
+      margin-right: 10px;
+      color: $name-color;
+    }
+    .age {
+      font-size: 1.125rem;
+      color: $age-color;
+    }
+    .country {
+      color: $age-color;
+      font-size: 0.875rem;
+    }
+  }
+
+  .social-media-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 89px;
+    border-top: 1px solid $border-color;
+    .media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .count{
+            font-weight: bold;
+            font-size: 1.125rem;
+            color: $name-color;
+        }
+        .tag{
+            color: $age-color;
+            font-size: .625rem;
+        }
+    }
+  }
+}
